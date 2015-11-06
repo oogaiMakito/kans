@@ -1,75 +1,55 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".AddKans" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="コーヒーと値段を入力してください。"
+        android:text="コーヒーを選択してください。"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:text="コーヒー名" />
-
-    <EditText
-        android:id="@+id/editCoffee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView2"
-        android:ems="10"
-        android:inputType="text" >
-
-        <requestFocus />
-    </EditText>
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaaaaa"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@+id/msg"
+        android:gravity="center"
+        android:text="Spinner" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/coffeePrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editCoffee"
+        android:layout_below="@+id/spinner1"
         android:text="値段" />
 
-    <EditText
-        android:id="@+id/editPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView3"
-        android:ems="10"
-        android:inputType="number" />
 
     <Button
         android:id="@+id/insert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editPrice"
+        android:layout_below="@+id/coffeePrice"
         android:text="登録" />
 
-    <Button
-        android:id="@+id/dataBase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:text="データベースの中身を閲覧" />
 
-</RelativeLayout>
+</LinearLayout>

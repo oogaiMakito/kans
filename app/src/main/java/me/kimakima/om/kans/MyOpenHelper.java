@@ -12,7 +12,13 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table purchaseHis("+"_id integer primary key autoincrement,"+"kanname text not null,"+"price integer not null,"+"date text not null"+");");
+        db.execSQL("create table purchaseHis("+
+                "_id integer primary key autoincrement,"+
+                "kanid integer not null,"+
+                "kanname text not null,"+
+                "price integer not null,"+
+                "date text not null"+
+                ");");
     }
 
     @Override
