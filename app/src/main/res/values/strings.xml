@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">缶マネージャー</string>
     <string name="action_add">追加</string>
+    <string name="g1">ジョージア ザ・プレミアム</string>
+    <string name="g2">エメラルドマウンテン ブレンド</string>
+    <string name="g3">エメラルドマウンテン 至福の微糖</string>
+    <string name="g4">エメラルドマウンテン ブラック</string>
+    <string name="g5">ヨーロピアン コクの微糖</string>
 </resources>

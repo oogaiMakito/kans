@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
         SQLiteDatabase db = helper.getReadableDatabase();
 
         //queryメソッドの実行例
-        Cursor c = db.query("purchaseHis", new String[]{"kanname", "price", "date"}, null, null, null, null, null);
+        Cursor c = db.query("purchaseHis", new String[]{"kanid", "kanname", "price", "date"}, null, null, null, null, null);
 
         //先頭に移動
         c.moveToFirst();
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 
         //ループでlist配列に値を代入
         for (int i = 0; i < list.length; i++) {
-            list[i] = String.format("%s \n %s / %d円", c.getString(2), c.getString(0), c.getInt(1));
+            list[i] = String.format("%s \n %s \n %s / %d円", c.getString(0), c.getString(3), c.getString(1), c.getInt(2));
             c.moveToNext();
         }
         c.close();
