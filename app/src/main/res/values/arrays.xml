@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kans_array">
+        <item>@string/g1</item>
+        <item>@string/g2</item>
+        <item>@string/g3</item>
+        <item>@string/g4</item>
+        <item>@string/g5</item>
+    </string-array>
+</resources>

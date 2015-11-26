@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="imgValue">
+        <item>@drawable/g1</item>
+        <item>@drawable/g2</item>
+        <item>@drawable/g3</item>
+        <item>@drawable/g4</item>
+        <item>@drawable/g5</item>
+    </string-array>
+</resources>
